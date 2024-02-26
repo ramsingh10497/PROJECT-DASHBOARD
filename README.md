@@ -11,7 +11,7 @@ Before getting started, ensure you have Node.js and npm installed on your machin
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/ramsingh10497/react-vite-dashboard.git
+   git clone https://github.com/ramsingh10497/PROJECT-DASHBOARD.git
    ```
 
 2. Navigate into the project directory:
