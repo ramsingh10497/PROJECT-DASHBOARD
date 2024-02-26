@@ -17,7 +17,7 @@ Before getting started, ensure you have Node.js and npm installed on your machin
 2. Navigate into the project directory:
 
    ```bash
-   cd react-vite-dashboard
+   cd PROJECT-DASHBOARD
    ```
 
 3. Install dependencies using npm:
