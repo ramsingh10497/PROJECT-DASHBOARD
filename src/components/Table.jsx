@@ -1,4 +1,5 @@
 import { FaChevronDown } from "react-icons/fa";
+import SkillDisplay from "./ProgressBar";
 
 function createData(name, projectManager, dueDate, status, progress) {
   return { name, projectManager, dueDate, status, progress };
@@ -10,28 +11,28 @@ const rows = [
     "Om Prakash",
     "May 25, 2023",
     "Completed",
-    "100%"
+    100
   ),
   createData(
     "Datascale AI app",
     "Neilsan Mando",
     "June 20, 2023",
     "Delayed",
-    "36%"
+    36
   ),
   createData(
     "Media channel branding",
     "Tiruvelly Priya",
     "July 13, 2023",
     "At Risk",
-    "66%"
+    66
   ),
   createData(
     "Corlax IOS app development",
     "Matte Hannery",
     "Dec 20, 2023",
     "Completed",
-    "100%"
+    100
   ),
 ];
 
@@ -98,7 +99,9 @@ const TableComponent = () => {
                 <td className="px-6 py-4 whitespace-nowrap">
                   <span className={makeStyle(row.status)}>{row.status}</span>
                 </td>
-                <td className="px-6 py-4 whitespace-nowrap">{row.progress}</td>
+                <td className="px-6 py-4 whitespace-nowrap">
+                  <SkillDisplay percent={row.progress} />
+                </td>
               </tr>
             ))}
           </tbody>

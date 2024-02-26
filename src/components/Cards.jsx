@@ -1,9 +1,7 @@
-import {
-  FaRegMoneyBillAlt,
-  FaProjectDiagram,
-  FaClock,
-  FaTools,
-} from "react-icons/fa";
+import TotalRevenue from "../assets/revenueLogo.svg";
+import Projects from "../assets/projects.svg";
+import Time from "../assets/time.svg";
+import Resources from "../assets/resources.svg";
 
 // eslint-disable-next-line react/prop-types
 const Card = ({ icon, heading, mainContent, footer }) => (
@@ -20,7 +18,7 @@ const Card = ({ icon, heading, mainContent, footer }) => (
 const Cards = () => (
   <div className="flex flex-wrap justify-around gap-4">
     <Card
-      icon={<FaRegMoneyBillAlt className="text-2xl" />}
+      icon={<img src={TotalRevenue} className="text-2xl" />}
       heading="Total Revenue"
       mainContent={
         <>
@@ -30,7 +28,7 @@ const Cards = () => (
       footer="12% decrease from last 12 months"
     />
     <Card
-      icon={<FaProjectDiagram className="text-2xl" />}
+      icon={<img src={Projects} className="text-2xl" />}
       heading="Projects"
       mainContent={
         <>
@@ -40,7 +38,7 @@ const Cards = () => (
       footer="12% decrease from last month"
     />
     <Card
-      icon={<FaClock className="text-2xl" />}
+      icon={<img src={Time} className="text-2xl" />}
       heading="Time Spent"
       mainContent={
         <>
@@ -50,7 +48,7 @@ const Cards = () => (
       footer="8% increase from last month"
     />
     <Card
-      icon={<FaTools className="text-2xl" />}
+      icon={<img src={Resources} className="text-2xl" />}
       heading="Resources"
       mainContent={
         <>

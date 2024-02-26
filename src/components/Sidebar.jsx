@@ -11,21 +11,29 @@ import {
   FaUsers,
   FaClipboardList,
 } from "react-icons/fa";
+import plus from "../assets/plus.svg";
+import dashboard from "../assets/dashboard.svg";
 
 const Sidebar = () => {
   return (
     <div className="bg-black text-white w-64 h-screen p-5">
-      <h1 className="text-center text-xl my-5">
-        <FaTachometerAlt className="inline mr-2" /> Promage
-      </h1>
-      <div className="bg-white text-black rounded-full py-2 px-4 mb-2 cursor-pointer flex items-center justify-center mx-auto">
-        <FaPlus className="mr-2 text-orange-500 bg-white rounded-full p-1" />{" "}
-        Create New Project
+      <div className="flex flex-row mb-16">
+        <img
+          src="public/logo.svg"
+          style={{ width: "31px", height: "30px" }}
+          className="mr-2"
+        />
+        <div className="font-semibold text-lg">Promage</div>
       </div>
-      <div className="bg-white text-orange-500 rounded-full py-2 px-4 mb-2 cursor-pointer flex items-center justify-center mx-auto">
-        <FaChartLine className="mr-2" /> Dashboard
+      <button className="bg-white text-black rounded-full p-3 mb-16 cursor-pointer flex flex-start mx-auto">
+        <img src={plus} />
+        <div className="font-semibold text-base p-1">Create New Project</div>
+      </button>
+      <div className="bg-white text-orange-500 rounded-full py-2 px-4 mb-4 cursor-pointer flex flex-start mx-auto">
+        <img src={dashboard} />
+        <div className="font-semibold text-base p-1 ml-4">Dashboard</div>
       </div>
-      <ul className="list-none p-0">
+      <ul className="list-none p-4">
         <li className="rounded-md py-2 mb-1 cursor-pointer flex items-center">
           <FaProjectDiagram className="mr-2" /> Projects
         </li>
@@ -39,13 +47,16 @@ const Sidebar = () => {
           <FaClock className="mr-2" /> Time Log
         </li>
         <li className="rounded-md py-2 mb-1 cursor-pointer flex items-center">
-          <FaTools className="mr-2" /> Resource Management
+          <FaTools className="mr-2" /> Resource Mgnt
         </li>
         <li className="rounded-md py-2 mb-1 cursor-pointer flex items-center">
           <FaUsers className="mr-2" /> Users
         </li>
         <li className="rounded-md py-2 mb-1 cursor-pointer flex items-center">
           <FaClipboardList className="mr-2" /> Project Template
+        </li>
+        <li className="rounded-md py-2 mb-1 cursor-pointer flex items-center">
+          <FaClipboardList className="mr-2" /> Menu Settings
         </li>
       </ul>
     </div>

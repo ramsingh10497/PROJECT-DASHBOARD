@@ -23,7 +23,7 @@ const Topbar = () => {
           </div>
           <div className="profile flex items-center rounded-full bg-white p-2 flex-1">
             <img
-              src="dp.jpeg" // Ensure the image path is correct
+              src="public/profile.jpg" // Ensure the image path is correct
               alt="Profile Picture"
               className="rounded-full w-8 h-8 mr-2"
             />

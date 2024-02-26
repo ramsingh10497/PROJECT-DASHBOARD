@@ -1,6 +1,7 @@
 import { FaChevronDown } from "react-icons/fa";
 import Cards from "./Cards";
 import Table from "./Table";
+import Stats from "./Stats";
 
 const Dashboard = () => {
   return (
@@ -11,9 +12,12 @@ const Dashboard = () => {
           Last 30 Days <FaChevronDown className="ml-1" />
         </div>
       </div>
-      <div className="mt-5">
+      <div className="flex flex-wrap gap-5">
         <Cards />
-        <Table />
+        <div className="flex gap-5">
+          <Table />
+          <Stats />
+        </div>
       </div>
     </div>
   );
