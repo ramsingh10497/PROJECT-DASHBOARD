@@ -61,7 +61,7 @@ const makeStyle = (status) => {
 const TableComponent = () => {
   return (
     <div className="bg-orange-100 p-5">
-      <div className="bg-white rounded-lg shadow-md">
+      <div style={{ background: "#F2EAE5" }} className=" rounded-lg shadow-md">
         <div className="flex justify-between items-center px-4 py-2 bg-orange-100 rounded-t-lg">
           <div className="font-bold">Project Summary</div>
           <div className="flex items-center justify-end space-x-4">

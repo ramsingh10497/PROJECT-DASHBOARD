@@ -5,7 +5,10 @@ import Resources from "../assets/resources.svg";
 
 // eslint-disable-next-line react/prop-types
 const Card = ({ icon, heading, mainContent, footer }) => (
-  <div className="max-w-sm p-6 rounded-lg border border-gray-200 shadow-md dark:border-gray-700 bg-orange-50">
+  <div
+    style={{ width: "22rem" }}
+    className="max-w-sm p-6 rounded-lg border border-gray-200 shadow-md dark:border-gray-700 bg-orange-50"
+  >
     <div className="flex justify-start items-center mb-4 text-gray-700">
       {icon}
     </div>
@@ -16,7 +19,10 @@ const Card = ({ icon, heading, mainContent, footer }) => (
 );
 
 const Cards = () => (
-  <div className="flex flex-wrap justify-around gap-4">
+  <div
+    className="flex flex-wrap justify-around gap-1"
+    style={{ width: "-webkit-fill-available" }}
+  >
     <Card
       icon={<img src={TotalRevenue} className="text-2xl" />}
       heading="Total Revenue"

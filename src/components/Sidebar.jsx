@@ -1,8 +1,6 @@
 // components/Sidebar.jsx
 
 import {
-  FaTachometerAlt,
-  FaPlus,
   FaChartLine,
   FaProjectDiagram,
   FaTasks,
@@ -16,7 +14,7 @@ import dashboard from "../assets/dashboard.svg";
 
 const Sidebar = () => {
   return (
-    <div className="bg-black text-white w-64 h-screen p-5">
+    <div className="bg-black text-white w-64 h-full p-5">
       <div className="flex flex-row mb-16">
         <img
           src="public/logo.svg"

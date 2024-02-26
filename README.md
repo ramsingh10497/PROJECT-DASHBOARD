@@ -4,6 +4,8 @@ This project is a simple dashboard built using React and Vite. It provides a fas
 
 ![Dashboard Preview](public/dashboard.png)
 
+![Dashboard Preview](public/dashboard1.png)
+
 ## Installation
 
 Before getting started, ensure you have Node.js and npm installed on your machine. Then, follow these steps:
