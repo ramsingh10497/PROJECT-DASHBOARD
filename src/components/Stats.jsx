@@ -13,7 +13,7 @@ const Stats = () => {
   return (
     <div
       style={{ background: "#F2EAE5", maxWidth: "52rem" }}
-      className="overall-container border border-gray-200 shadow-md dark:border-gray-700 p-4 w-full md:w-96"
+      className="overall-container border border-gray-200 shadow-md dark:border-gray-700 p-4 w-full"
     >
       <div className="flex justify-between items-center">
         <h2 className="text-black font-bold text-lg">Overall Progress</h2>
@@ -36,9 +36,25 @@ const Stats = () => {
             fill="#8884d8"
             label
           />
-          <Tooltip />
-          <Legend />
         </PieChart>
+      </div>
+      <div className="flex w-content gap-4">
+        <div className="flex flex-col no-wrap">
+          <div className="font-semibold">95</div>
+          <p className="text-gray-400">Total projects</p>
+        </div>
+        <div className="flex flex-col no-wrap">
+          <div className="font-semibold text-green-700">26</div>
+          <p className="text-gray-400">Completed</p>
+        </div>
+        <div className="flex flex-col no-wrap">
+          <div className="font-semibold text-yellow-500">35</div>
+          <p className="text-gray-400">Delayed</p>
+        </div>
+        <div className="flex flex-col no-wrap">
+          <div className="font-semibold text-red-400">35</div>
+          <p className="text-gray-400">On Going</p>
+        </div>
       </div>
     </div>
   );
